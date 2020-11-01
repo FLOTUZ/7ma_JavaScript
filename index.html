@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Ejercicios Javascript</h1>
+    <div>
+        <!----------------- Formulario 1 ---------- -->
+        <div>
+            <h2>Ejercicio 1</h2>
+            <p>Ingresa una palabra en el primer campo y una letra en el segundo para decirte cuantas veces se repite la letra en la palabra
+            </p>
+            <form>
+                <label for="word"> Ingresa la palabra aqui: </label>
+                <input type="text" name="word">
+                <br><br>
+                <label for="char"> Escribe el caracter aqui: </label>
+                <input type="text" name="char" maxlength="1">
+                <br>
+                <input type="button" value="Buscar" onclick="frecuencyChar(this)">
+            </form>
+            <h4 id="resultado"></h4>
+        </div>
+
+        <hr>
+
+        <!----------------- Formulario 2 ---------- -->
+        <br>
+        <div>
+            <h2>Ejercicio 2</h2>
+            <p>Ingresa una letra para decirtela en codigo radiofonico</p>
+            <form>
+                <label for="letter"> Ingresa letra aqui  </label>
+                <input type="text" name="letter" maxlength="1">
+                <br>
+                <input type="button" value="Dame codigo alfabetico" onclick="alphabet(this)">
+            </form>
+            <h4 id="code"></h4>
+        </div>
+
+        <hr>
+        <!----------------- Formulario 2 ---------- -->
+        <br>
+        <div>
+            <h2>Ejercicio 3</h2>
+            <p>Ingresa letra para decirtela en codigo ascii</p>
+            <form>
+                <label for="letra"> Pon aquí la letra  </label>
+                <input type="text" name="letra" maxlength="1">
+                <br>
+                <input type="button" value="Dame codigo ascii" onclick="ascii(this)">
+            </form>
+            <h4 id="asc"></h4>
+        </div>
+    </div>
+</body>
+
+</html>
